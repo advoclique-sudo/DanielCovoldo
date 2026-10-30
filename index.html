@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Daniel Covolo Advocacia | Locações, Condomínios e Contratos Imobiliários em Santa Maria/RS</title>
-<meta name="description" content="Advocacia especializada em locações, condomínios, imobiliárias e contratos de compra e venda em Santa Maria/RS. Aluguel atrasado, despejo, inadimplência condominial, distrato e assessoria jurídica recorrente. Fale pelo WhatsApp.">
-<meta property="og:title" content="Daniel Covolo Advocacia — Locações, Condomínios e Contratos">
-<meta property="og:description" content="Problemas com imóvel, inquilino, condomínio ou contrato? Atendimento jurídico direto em Santa Maria/RS.">
+<title>Daniel Covolo Advocacia | Inventário e Partilha de Bens em Santa Maria/RS</title>
+<meta name="description" content="Advogado para inventário em Santa Maria/RS. Inventário extrajudicial em cartório ou judicial, partilha de bens, herdeiros em desacordo, inventário atrasado e regularização de imóveis herdados. Fale pelo WhatsApp.">
+<meta property="og:title" content="Daniel Covolo Advocacia — Inventário e Partilha de Bens">
+<meta property="og:description" content="Perdeu alguém e precisa resolver o inventário? Atendimento jurídico direto em Santa Maria/RS.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/png" href="img/logo-escura.png">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -72,7 +75,7 @@
   /* Hero */
   .hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;isolation:isolate}
   .hero::before{content:"";position:absolute;inset:0;z-index:-2;
-    background:url("img/hero-bg.jpg") center 35%/cover no-repeat;
+    background:url("img/hero-bg.jpg") center 40%/cover no-repeat;
     filter:saturate(.7) contrast(1.05)}
   .hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:
     radial-gradient(900px 500px at 85% 15%,rgba(184,121,58,.18),transparent 60%),
@@ -218,6 +221,15 @@
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero-copy,.hero-visual{animation:none}.wa-float::after{animation:none}}
+  /* Comparativo */
+  .cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px;text-align:left}
+  .cmp-card{background:rgba(255,255,255,.04);border:1px solid var(--line-light);border-radius:var(--radius);padding:24px 24px}
+  .cmp-card.hi{border-color:rgba(230,199,154,.55);background:rgba(184,121,58,.08)}
+  .cmp-card h3{font-size:22px;color:#fff;margin-bottom:4px}
+  .cmp-card .sub{font-size:13px;color:var(--copper-light);letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin-bottom:14px}
+  .cmp-card li{display:flex;gap:10px;font-size:14.5px;color:rgba(255,255,255,.78);margin-bottom:8px}
+  .cmp-card li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--copper-light);margin-top:8px}
+  @media (max-width:820px){.cmp{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -226,12 +238,12 @@
   <div class="container nav">
     <a href="#" class="brand" aria-label="Daniel Covolo Advocacia"><img src="img/logo-branca.png" alt="Daniel Covolo Advocacia"></a>
     <nav class="nav-links" aria-label="Seções">
-      <a href="#problemas">Como podemos ajudar</a>
-      <a href="#assessoria">Condomínios e imobiliárias</a>
+      <a href="#problemas">Situações</a>
+      <a href="#assessoria">Cartório ou Justiça?</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
-    <a class="btn btn-wa" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20sobre%20um%20im%C3%B3vel%2Floca%C3%A7%C3%A3o%2Fcondom%C3%ADnio." target="_blank" rel="noopener">
+    <a class="btn btn-wa" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20invent%C3%A1rio." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 15 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.2-8.3 8.2z"/></svg>
       Falar no WhatsApp
     </a>
@@ -242,13 +254,13 @@
 <section class="hero" id="inicio">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">Locações · Condomínios · Contratos imobiliários · Santa Maria/RS</span>
-      <h1>Problema com imóvel, inquilino, condomínio ou contrato <em>não se resolve esperando.</em></h1>
-      <p>Aluguel atrasado, condômino que não paga, imobiliária sem respaldo jurídico, compra e venda que deu errado. Descreva o caso e receba um retorno objetivo sobre o que pode ser feito.</p>
+      <span class="eyebrow">Inventário e partilha de bens · Santa Maria/RS</span>
+      <h1>Perdeu alguém e não sabe por onde começar o <em>inventário?</em></h1>
+      <p>Bens bloqueados, prazo correndo, herdeiros que não se entendem, imóvel que não pode ser vendido. O inventário não precisa ser lento nem virar briga de família. Descreva a situação e receba um retorno objetivo sobre o caminho mais rápido.</p>
       <div class="hero-cta">
-        <a class="btn btn-wa" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20sobre%20um%20im%C3%B3vel%2Floca%C3%A7%C3%A3o%2Fcondom%C3%ADnio." target="_blank" rel="noopener">
+        <a class="btn btn-wa" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20invent%C3%A1rio." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 15 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.2-8.3 8.2z"/></svg>
-          Descrever meu caso no WhatsApp
+          Falar sobre meu inventário
         </a>
         <a class="btn btn-ghost" href="#problemas">Ver situações que atendemos</a>
       </div>
@@ -270,10 +282,10 @@
 <div class="strip" role="presentation">
   <div class="container">
     <ul>
-      <li>Locação e despejo</li>
-      <li>Condomínios e síndicos</li>
-      <li>Assessoria para imobiliárias</li>
-      <li>Compra, venda e contratos</li>
+      <li>Inventário extrajudicial (cartório)</li>
+      <li>Inventário judicial</li>
+      <li>Partilha e divisão de bens</li>
+      <li>Regularização de imóveis herdados</li>
     </ul>
   </div>
 </div>
@@ -290,80 +302,89 @@
     <div class="prob-grid">
       <article class="prob reveal">
         <span class="num">01</span>
-        <h3>Locação de imóveis</h3>
-        <p class="who">Para proprietários, inquilinos e fiadores</p>
+        <h3>Preciso abrir o inventário</h3>
+        <p class="who">Para famílias que perderam alguém recentemente</p>
         <ul>
-          <li>Inquilino com aluguel ou encargos atrasados e sem previsão de pagamento</li>
-          <li>Ação de despejo e retomada do imóvel com segurança jurídica</li>
-          <li>Imóvel devolvido danificado, sem pintura ou com contas em aberto</li>
-          <li>Renovação, reajuste e rescisão antecipada</li>
+          <li>Prazo legal de 2 meses após o falecimento, com multa sobre o imposto (ITCD) em caso de atraso</li>
+          <li>Contas, veículos e imóveis bloqueados até a conclusão da partilha</li>
+          <li>Dúvida sobre quais documentos reunir e qual via escolher (cartório ou Justiça)</li>
+          <li>Cálculo e pagamento do ITCD sem pagar a mais</li>
         </ul>
-        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Tenho%20um%20problema%20com%20loca%C3%A7%C3%A3o%20de%20im%C3%B3vel." target="_blank" rel="noopener">Tenho um problema de locação <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Perdi%20um%20familiar%20e%20preciso%20abrir%20o%20invent%C3%A1rio." target="_blank" rel="noopener">Quero abrir o inventário <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="prob reveal">
         <span class="num">02</span>
-        <h3>Condomínios</h3>
-        <p class="who">Para síndicos, administradoras e condôminos</p>
+        <h3>Herdeiros em desacordo</h3>
+        <p class="who">Quando a família não chega a um consenso</p>
         <ul>
-          <li>Inadimplência de cotas condominiais comprometendo o caixa</li>
-          <li>Cobrança judicial e extrajudicial com rito adequado e rápido</li>
-          <li>Conflitos entre vizinhos: barulho, uso de áreas comuns, animais, obras</li>
-          <li>Responsabilidade do síndico e prestação de contas</li>
+          <li>Herdeiro que não assina, não responde ou mora em outra cidade</li>
+          <li>Divergência sobre a divisão dos bens ou sobre o valor deles</li>
+          <li>Herdeiro menor ou incapaz, testamento ou companheiro(a) não reconhecido</li>
+          <li>Bens usados por um só herdeiro enquanto os outros nada recebem</li>
         </ul>
-        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20condom%C3%ADnio." target="_blank" rel="noopener">Preciso de ajuda com o condomínio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20ajuda%20com%20um%20invent%C3%A1rio%20em%20que%20os%20herdeiros%20n%C3%A3o%20se%20entendem." target="_blank" rel="noopener">Os herdeiros não se entendem <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="prob reveal">
         <span class="num">03</span>
-        <h3>Imobiliárias e corretores</h3>
-        <p class="who">Para quem administra ou intermedeia imóveis de terceiros</p>
+        <h3>Inventário parado ou atrasado</h3>
+        <p class="who">Para quem deixou passar anos sem resolver</p>
         <ul>
-          <li>Contratos de locação e administração desatualizados ou frágeis</li>
-          <li>Proprietário cobrando a imobiliária por prejuízo com inquilino</li>
-          <li>Comissão de corretagem não paga ou contestada</li>
-          <li>Demandas recorrentes que exigem advogado de retaguarda</li>
+          <li>Imóvel ainda no nome de quem faleceu, impossível de vender ou financiar</li>
+          <li>Herdeiro que também faleceu antes de concluir a partilha (inventários cumulados)</li>
+          <li>Processo judicial parado há anos sem andamento</li>
+          <li>Multa do ITCD acumulada e documentação desatualizada</li>
         </ul>
-        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Tenho%20uma%20imobili%C3%A1ria%20e%20preciso%20de%20assessoria%20jur%C3%ADdica." target="_blank" rel="noopener">Quero assessoria para minha imobiliária <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Tenho%20um%20invent%C3%A1rio%20parado%20ou%20atrasado%20h%C3%A1%20anos%20e%20quero%20resolver." target="_blank" rel="noopener">Meu inventário está parado <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
 
       <article class="prob reveal">
         <span class="num">04</span>
-        <h3>Compra, venda e contratos</h3>
-        <p class="who">Para compradores, vendedores e investidores</p>
+        <h3>Dívidas, empresa e bens complexos</h3>
+        <p class="who">Quando o patrimônio exige cuidado especial</p>
         <ul>
-          <li>Promessa de compra e venda descumprida, atraso na entrega ou distrato</li>
-          <li>Imóvel com dívida, penhora ou problema de matrícula descoberto depois</li>
-          <li>Vícios ocultos, infiltração e defeitos após a compra</li>
-          <li>Elaboração e revisão de contratos antes de assinar, evitando o litígio</li>
+          <li>Dívidas deixadas pelo falecido: o que os herdeiros respondem e o que não</li>
+          <li>Quotas de empresa, imóvel rural, bens em outros estados ou no exterior</li>
+          <li>Imóvel sem escritura ou sem registro em nome do falecido</li>
+          <li>Pensão, seguro, FGTS e valores a receber após o óbito</li>
         </ul>
-        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20contrato%20de%20compra%20e%20venda." target="_blank" rel="noopener">Tenho dúvida sobre um contrato <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="mini" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20invent%C3%A1rio%20com%20d%C3%ADvidas%2C%20empresa%20ou%20bens%20complexos." target="_blank" rel="noopener">Tenho um caso mais complexo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
+
     </div>
   </div>
 </section>
 
-<!-- ASSESSORIA RECORRENTE -->
+<!-- CARTÓRIO OU JUSTIÇA -->
 <section class="assessoria" id="assessoria">
   <div class="container ass-grid reveal">
-    <span class="eyebrow center" style="color:var(--copper-light)">Assessoria jurídica contínua</span>
-    <h2 style="margin:16px auto 12px;max-width:22ch">Condomínios e imobiliárias precisam de advogado <em>antes</em> do problema.</h2>
-    <p class="lead">Cobrança, contrato e conflito acontecem toda semana. A assessoria recorrente garante um advogado disponível, documentos padronizados e cobranças que não ficam paradas.</p>
-    <ul class="ass-list">
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
-        <div><strong>Contratos e documentos revisados</strong><span>Locação, administração, convenção, atas e notificações.</span></div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <div><strong>Cobrança de inadimplentes</strong><span>Notificação, acordo e, se necessário, ação judicial.</span></div>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-        <div><strong>Consulta direta no dia a dia</strong><span>Síndico ou corretor tira a dúvida antes de decidir.</span></div>
-      </li>
-    </ul>
-    <a class="btn btn-copper" style="margin-top:28px" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Quero%20saber%20sobre%20assessoria%20jur%C3%ADdica%20recorrente%20para%20condom%C3%ADnio%2Fimobili%C3%A1ria." target="_blank" rel="noopener">Quero uma proposta de assessoria
+    <span class="eyebrow center" style="color:var(--copper-light)">Cartório ou Justiça?</span>
+    <h2 style="margin:16px auto 12px;max-width:24ch">O caminho certo define se o inventário leva <em>semanas</em> ou anos.</h2>
+    <p class="lead">A escolha depende da situação da família e dos bens. Na primeira conversa já é possível dizer qual via se aplica ao seu caso.</p>
+    <div class="cmp">
+      <div class="cmp-card hi">
+        <h3>Inventário extrajudicial</h3>
+        <p class="sub">Em cartório · o mais rápido</p>
+        <ul>
+          <li>Herdeiros de acordo com a divisão</li>
+          <li>Feito por escritura pública, sem processo judicial</li>
+          <li>Conclusão geralmente em poucas semanas</li>
+          <li>Advogado obrigatório para assinar a escritura</li>
+        </ul>
+      </div>
+      <div class="cmp-card">
+        <h3>Inventário judicial</h3>
+        <p class="sub">Na Justiça · quando há conflito</p>
+        <ul>
+          <li>Herdeiros em desacordo ou herdeiro que não localiza</li>
+          <li>Situações que exigem decisão do juiz</li>
+          <li>Pode ser consensual (mais rápido) ou litigioso</li>
+          <li>Estratégia processual evita anos de atraso</li>
+        </ul>
+      </div>
+    </div>
+    <a class="btn btn-copper" style="margin-top:28px" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Quero%20saber%20se%20meu%20invent%C3%A1rio%20pode%20ser%20feito%20em%20cart%C3%B3rio." target="_blank" rel="noopener">Descobrir qual via se aplica ao meu caso
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
@@ -375,23 +396,23 @@
     <div class="section-head reveal">
       <span class="eyebrow">Simples e direto</span>
       <h2>Como funciona</h2>
-      <p class="lead">Você não precisa saber o nome técnico do problema. Basta contar o que aconteceu.</p>
+      <p class="lead">Você não precisa saber o nome técnico de nada. Basta contar a situação da família.</p>
     </div>
     <div class="steps reveal">
       <div class="step">
         <span class="n">1</span>
-        <h3>Você descreve a situação</h3>
-        <p>Pelo WhatsApp, conte o que aconteceu e envie os documentos que tiver (contrato, mensagens, boletos).</p>
+        <h3>Você conta a situação</h3>
+        <p>Pelo WhatsApp, informe quem faleceu, quem são os herdeiros e quais bens existem. Os documentos podem vir depois.</p>
       </div>
       <div class="step">
         <span class="n">2</span>
-        <h3>Análise e estratégia</h3>
-        <p>Retorno claro sobre alternativas, prazos realistas, custos e o caminho recomendado.</p>
+        <h3>Levantamento e estratégia</h3>
+        <p>Definição da via (cartório ou Justiça), lista de documentos, cálculo do ITCD e previsão realista de prazos e custos.</p>
       </div>
       <div class="step">
         <span class="n">3</span>
-        <h3>Execução com acompanhamento</h3>
-        <p>Notificação, acordo, contrato ou ação judicial, com você informado em cada etapa.</p>
+        <h3>Partilha e registro</h3>
+        <p>Escritura ou sentença de partilha e transferência dos bens para o nome dos herdeiros, com você informado em cada etapa.</p>
       </div>
     </div>
   </div>
@@ -407,11 +428,11 @@
     <h2>Atendimento direto, sem intermediários</h2>
     <p class="nome">Daniel Covolo da Costa</p>
     <p class="oab">Advogado · OAB/RS 59.907</p>
-    <p class="txt">Advocacia focada em locações, condomínios e contratos imobiliários, atendendo pessoas, condomínios e imobiliárias em Santa Maria e região, com compromisso com prazos e comunicação clara.</p>
+    <p class="txt">Advocacia em inventários, partilhas e regularização de bens herdados, atendendo famílias de Santa Maria e região com objetividade, compromisso com prazos e comunicação clara em um momento delicado.</p>
     <ul class="quem-facts">
       <li>Santa Maria/RS</li>
       <li>Presencial e online</li>
-      <li>Consultivo e contencioso</li>
+      <li>Extrajudicial e judicial</li>
     </ul>
   </div>
 </section>
@@ -425,21 +446,30 @@
     </div>
     <div class="faq-list reveal">
       <details>
-        <summary>Meu inquilino está com aluguel atrasado. Quanto tempo leva para retomar o imóvel?<span class="ic"></span></summary>
-        <p>Depende da garantia do contrato e da postura do inquilino. Muitas vezes a notificação extrajudicial já resolve; quando é preciso ação de despejo, a lei permite pedir desocupação em prazo reduzido em certas hipóteses. Na análise do contrato é possível indicar o caminho mais rápido.</p>
+        <summary>Qual é o prazo para abrir o inventário?<span class="ic"></span></summary>
+        <p>A lei prevê 2 meses a partir do falecimento. Passado esse prazo o inventário continua possível, mas a legislação estadual prevê multa sobre o ITCD. Quanto antes for iniciado, menor o custo e menos chance de complicação.</p>
       </details>
+
       <details>
-        <summary>Sou síndico. Como cobrar condôminos inadimplentes sem gerar conflito no prédio?<span class="ic"></span></summary>
-        <p>Com um fluxo padronizado e impessoal: notificação formal, proposta de parcelamento e, se não houver pagamento, ação judicial. O próprio imóvel responde pela dívida. Terceirizar essa etapa ao advogado protege o síndico e preserva a convivência.</p>
+        <summary>Precisa de advogado para fazer o inventário em cartório?<span class="ic"></span></summary>
+        <p>Sim. Mesmo no inventário extrajudicial, a lei exige a participação de advogado, que assina a escritura junto com os herdeiros. É ele quem reúne os documentos, calcula o imposto e conduz o procedimento no tabelionato.</p>
       </details>
+
       <details>
-        <summary>Tenho uma imobiliária. Vale a pena ter assessoria jurídica fixa?<span class="ic"></span></summary>
-        <p>Para quem administra uma carteira de imóveis, sim. Inadimplência, devolução de imóvel e questionamentos de proprietários são recorrentes, e cada um resolvido tarde custa mais do que a assessoria mensal.</p>
+        <summary>Os herdeiros não concordam. E agora?<span class="ic"></span></summary>
+        <p>O inventário segue pela via judicial. Ainda assim, há espaço para acordo durante o processo, o que encurta bastante o tempo. A estratégia certa evita que a divergência trave a partilha por anos.</p>
       </details>
+
       <details>
-        <summary>Quanto custa a consulta?<span class="ic"></span></summary>
-        <p>Os honorários são informados com transparência após a compreensão inicial do caso, conforme a complexidade e o tipo de atuação. No primeiro contato pelo WhatsApp você já recebe orientação sobre como funciona o atendimento.</p>
+        <summary>Posso vender um imóvel antes de terminar o inventário?<span class="ic"></span></summary>
+        <p>Em regra, não: o imóvel só pode ser vendido depois de registrado em nome dos herdeiros. Em algumas situações é possível pedir autorização judicial para venda durante o processo. Cada caso precisa ser analisado.</p>
       </details>
+
+      <details>
+        <summary>Quanto custa um inventário?<span class="ic"></span></summary>
+        <p>Os custos envolvem o ITCD (imposto estadual), emolumentos do cartório ou custas judiciais e os honorários do advogado, informados com transparência após a compreensão inicial do caso. No primeiro contato você já recebe uma noção do que esperar.</p>
+      </details>
+
     </div>
   </div>
 </section>
@@ -448,9 +478,9 @@
 <section class="cta">
   <div class="container">
     <span class="eyebrow center" style="color:var(--copper-light)">Fale com o escritório</span>
-    <h2>Conte o que está acontecendo e descubra o que pode ser feito.</h2>
-    <p>Quanto antes o caso é analisado, mais alternativas existem.</p>
-    <a class="btn btn-wa" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20sobre%20um%20im%C3%B3vel%2Floca%C3%A7%C3%A3o%2Fcondom%C3%ADnio." target="_blank" rel="noopener">
+    <h2>Resolva o inventário com segurança e sem desgaste.</h2>
+    <p>Quanto antes o caso é analisado, menor o custo e mais rápida a partilha.</p>
+    <a class="btn btn-wa" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20invent%C3%A1rio." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 15 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.2-8.3 8.2z"/></svg>
       Falar com o Dr. Daniel no WhatsApp
     </a>
@@ -463,7 +493,7 @@
     <div class="foot-grid">
       <div>
         <img src="img/logo-branca.png" alt="Daniel Covolo Advocacia">
-        <p>Advocacia em Direito Imobiliário, locações, condomínios, contratos e assessoria jurídica para pessoas, condomínios e empresas do setor imobiliário.</p>
+        <p>Advocacia em inventários, partilhas, planejamento sucessório e regularização de bens herdados em Santa Maria/RS.</p>
       </div>
       <div>
         <h4>Escritório</h4>
@@ -489,7 +519,7 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20sobre%20um%20im%C3%B3vel%2Floca%C3%A7%C3%A3o%2Fcondom%C3%ADnio." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a class="wa-float" href="https://wa.me/5555991618008?text=Ol%C3%A1%2C%20Dr.%20Daniel.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20invent%C3%A1rio." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 15 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.2-8.3 8.2z"/></svg>
 </a>
 
