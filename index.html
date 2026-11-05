@@ -537,5 +537,19 @@
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<!-- Google Ads: conversao Contato no clique do WhatsApp -->
+<script>
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event','conversion',{
+        'send_to':'AW-959734608/4zF-CP_D1bIdENDG0ckD',
+        'value':1.0,
+        'currency':'BRL',
+        'transport_type':'beacon'
+      });
+    }
+  });
+</script>
 </body>
 </html>
